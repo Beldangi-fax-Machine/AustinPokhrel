@@ -1,0 +1,26 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+.gravity-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #333;
+    animation: gravityAnimation 2s infinite;
+}
+
+@keyframes gravityAnimation {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, 100%) scale(1.5);
+    }
+}
