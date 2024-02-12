@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AUSTIN-POKHREL</title>
+    <link rel="stylesheet" href="WORK.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="work" onclick="toggleText()" tabindex="0">
+        <span id="work-text">WORK</span>
+        <div class="additional-text" id="additional-text">
+            <a href="Poster.html" class="text-item" onclick="event.stopPropagation()">-Poster Design</a>
+            <a href="product.html" class="text-item" onclick="event.stopPropagation()">-Product Design</a>
+            <a href="missalenouis.html" class="tex
+            t-item" onclick="event.stopPropagation()">-Missalenouis</a>
+            <a href="index.html" class="text-item" onclick="event.stopPropagation()">-Home</a>
+        </div>
+    </div>
+
+  
+
+    <div class="text-container">
+        <h1 class="glowing-text">
+            <span class="glow-letter">L</span>
+            <span class="glow-letter">o</span>
+            <span class="glow-letter">g</span>
+            <span class="glow-letter">o</span>
+          
+        </h1>
+       
+        
+     
+    </div>
+    
+    
+   
+       
+        
+        
+    <div class="image-container">
+        <div class="image-wrapper">
+            <img src="IMG_8711.png" alt="Image 1" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 2" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 3" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 4" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 5" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 1" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 2" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 3" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 4" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 5" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 1" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 2" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 3" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 4" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 5" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 1" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 2" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 3" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 4" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 5" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 1" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 2" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 3" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 4" class="hover-image" style="width: 300px;">
+            <img src="IMG_8711.png" alt="Image 5" class="hover-image" style="width: 300px;">
+        </div>
+       
+        
+        
+    </div>
+
+   
+
+    <div class="overlay" id="overlay" onclick="closeOverlay()"></div>
+    <script >
+let textVisible = false;
+
+function toggleText() {
+    const overlay = document.getElementById("overlay");
+    const additionalText = document.getElementById("additional-text");
+    textVisible = !textVisible;
+    if (textVisible) {
+        overlay.style.display = "block";
+        additionalText.style.display = "block";
+    } else {
+        overlay.style.display = "none";
+        additionalText.style.display = "none";
+    }
+}
+
+function openContent(page) {
+    window.open(page, '_blank'); // Open in a new tab
+}
+
+function closeOverlay() {
+    const overlay = document.getElementById("overlay");
+    const additionalText = document.getElementById("additional-text");
+    overlay.style.display = "none";
+    additionalText.style.display = "none";
+}
+
+//////////////////////////////////////
+let aboutTextVisible = false;
+
+function toggleAboutText() {
+    const overlay = document.getElementById("overlay");
+    const additionalText = document.getElementById("additional-text-about");
+    aboutTextVisible = !aboutTextVisible;
+    if (aboutTextVisible) {
+        overlay.style.display = "block";
+        additionalText.style.display = "block";
+    } else {
+        overlay.style.display = "none";
+        additionalText.style.display = "none";
+    }
+}
+
+function closeOverlay() {
+    const overlay = document.getElementById("overlay");
+    const additionalText = document.getElementById("additional-text-about");
+    overlay.style.display = "none";
+    additionalText.style.display = "none";
+}
+
+//////////////////////////////////////////////////
+// Add event listeners to each glow letter to change color on hover
+document.querySelectorAll('.glow-letter').forEach(letter => {
+    letter.addEventListener('mouseover', () => {
+        letter.style.color = 'red';
+    });
+
+    letter.addEventListener('mouseout', () => {
+        letter.style.color = ''; // Revert to default color
+    });
+});
+
+
+
+
+    </script>
+</body>
+</html>
